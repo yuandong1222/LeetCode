@@ -13,6 +13,7 @@
 		18EC23DC19FD1860000B5E0B /* 002.Pascal_Triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18EC23DB19FD1860000B5E0B /* 002.Pascal_Triangle.cpp */; };
 		18F58DDC1B50EE8400586DC6 /* 005.Maximum_Depth_of_Binary_Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F58DDB1B50EE8400586DC6 /* 005.Maximum_Depth_of_Binary_Tree.cpp */; };
 		18F58DE11B51062A00586DC6 /* 006.Multiply_Strings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F58DE01B51062A00586DC6 /* 006.Multiply_Strings.cpp */; };
+		43972C7C1B527568001159FA /* 007.Single_Number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43972C7B1B527568001159FA /* 007.Single_Number.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		18EC23DB19FD1860000B5E0B /* 002.Pascal_Triangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 002.Pascal_Triangle.cpp; sourceTree = "<group>"; };
 		18F58DDB1B50EE8400586DC6 /* 005.Maximum_Depth_of_Binary_Tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 005.Maximum_Depth_of_Binary_Tree.cpp; sourceTree = "<group>"; };
 		18F58DE01B51062A00586DC6 /* 006.Multiply_Strings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 006.Multiply_Strings.cpp; sourceTree = "<group>"; };
+		43972C7B1B527568001159FA /* 007.Single_Number.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 007.Single_Number.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				187FCAB11A17540B00F28851 /* 004.Symmetric_Tree.cpp */,
 				18F58DDB1B50EE8400586DC6 /* 005.Maximum_Depth_of_Binary_Tree.cpp */,
 				18F58DE01B51062A00586DC6 /* 006.Multiply_Strings.cpp */,
+				43972C7B1B527568001159FA /* 007.Single_Number.cpp */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43972C7C1B527568001159FA /* 007.Single_Number.cpp in Sources */,
 				18F58DE11B51062A00586DC6 /* 006.Multiply_Strings.cpp in Sources */,
 				187FCAB21A17540B00F28851 /* 004.Symmetric_Tree.cpp in Sources */,
 				18F58DDC1B50EE8400586DC6 /* 005.Maximum_Depth_of_Binary_Tree.cpp in Sources */,

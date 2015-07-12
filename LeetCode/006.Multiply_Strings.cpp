@@ -34,17 +34,17 @@ public:
         vector_a = string_to_vector(num1);
         vector_b = string_to_vector(num2);
         
-        _multiply(vector_a, vector_b, vector_c);
+        //_multiply(vector_a, vector_b, vector_sum);
         
         
         string result;
-        result = vector_to_string(vector_c);
+        result = vector_to_string(vector_sum);
         
         return result;
     };
 };
 
-int main(int argc, char* argv[]) {
+int main006(int argc, char* argv[]) {
     Solution006 solution;
     string a("1234567890");
     string b("1234567890");
