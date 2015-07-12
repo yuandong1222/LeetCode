@@ -44,7 +44,7 @@ public:
     };
 };
 
-int main006(int argc, char* argv[]) {
+int main(int argc, char* argv[]) {
     Solution006 solution;
     string a("1234567890");
     string b("1234567890");

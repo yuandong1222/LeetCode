@@ -14,7 +14,7 @@ public:
     }
 };
 
-int main(int argc, const char * argv[]) {
+int main007(int argc, const char * argv[]) {
     Solution007 solution;
     vector<int> a(5);
     a[0] = 0;
