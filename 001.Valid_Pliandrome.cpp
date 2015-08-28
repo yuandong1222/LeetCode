@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class Solution001 {
+class Solution {
 public:
     bool isAlphanumeric(char c) {
         if (c >= 'a' && c <= 'z')
@@ -46,8 +46,8 @@ public:
     }
 };
 
-int main001(int argc, char* argv[]) {
-    Solution001 solution;
+int main(int argc, char* argv[]) {
+    Solution solution;
     string s("a.");
     cout << solution.isPalindrome(s) << endl;
     return 0;
