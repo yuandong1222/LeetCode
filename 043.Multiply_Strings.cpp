@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Solution006 {
+class Solution {
 public:
     
     vector<int> string_to_vector(string s) {
@@ -66,7 +66,7 @@ public:
 };
 
 int main(int argc, char* argv[]) {
-    Solution006 solution;
+    Solution solution;
     string a("0");
     string b("0");
     

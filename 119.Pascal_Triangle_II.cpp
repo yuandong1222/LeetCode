@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class Solution003 {
+class Solution{
 public:
     vector<int> getRow(int rowIndex) {
         vector<int> lineA(rowIndex + 1);
@@ -21,8 +21,8 @@ public:
     
 };
 
-int main003(int argc, char* argv[]) {
-    Solution003 solution;
+int main(int argc, char* argv[]) {
+    Solution solution;
     vector<int> result = solution.getRow(4);
     
     for (vector<int>::iterator it = result.begin(); it != result.end(); it++) {

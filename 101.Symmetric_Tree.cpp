@@ -1,5 +1,6 @@
 #include <vector>
 #include <iostream>
+#include <cstdlib>
 
 using namespace std;
 
@@ -11,7 +12,7 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
-class Solution004 {
+class Solution {
 public:
     bool isSymmetric(TreeNode *root) {
         //return _isSymmetricByLine(root);
@@ -24,7 +25,8 @@ public:
         line[0] = root;
         
         while (!_isEmptyLine(line, line_size)) {
-            TreeNode **next_line = (TreeNode **)malloc(sizeof(TreeNode *) * line_size * 2);            for (int i = 0; i < line_size; i++) {
+            TreeNode **next_line = (TreeNode **)malloc(sizeof(TreeNode *) * line_size * 2);
+            for (int i = 0; i < line_size; i++) {
                 TreeNode* node = line[i];
                 if (node == NULL) {
                     next_line[i * 2] = NULL;
@@ -113,10 +115,10 @@ public:
     }
 };
 
-class Solution004_Test {
+class Solution_Test {
 public:
     void test_case_1() {
-        Solution004 solution;
+        Solution solution;
         
         TreeNode n1(1);
         
@@ -138,7 +140,7 @@ public:
         cout << solution.isSymmetric(&n1) << endl;
     };
     void test_case_2() {
-        Solution004 solution;
+        Solution solution;
     
         TreeNode n1(1);
     
@@ -156,7 +158,7 @@ public:
         cout << solution.isSymmetric(&n1) << endl;
     };
     void test_case_3() {
-        Solution004 solution;
+        Solution solution;
     
         TreeNode n1(1);
         TreeNode n2(-42);
@@ -176,7 +178,7 @@ public:
         cout << solution.isSymmetric(&n1) << endl;
     };
     void test_case_4() {
-        Solution004 solution;
+        Solution solution;
         
         TreeNode n1(1);
         TreeNode n2(2);
@@ -186,12 +188,12 @@ public:
         cout << solution.isSymmetric(&n1) << endl;
     };
 };
-int main004(int argc, char* argv[]) {
-    Solution004_Test solution004_test;
-    solution004_test.test_case_1();
-    solution004_test.test_case_2();
-    solution004_test.test_case_3();
-    solution004_test.test_case_4();
+int main(int argc, char* argv[]) {
+    Solution_Test solution_test;
+    solution_test.test_case_1();
+    solution_test.test_case_2();
+    solution_test.test_case_3();
+    solution_test.test_case_4();
     
     return 0;
 };

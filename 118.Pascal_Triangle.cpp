@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class Solution002 {
+class Solution {
 public:
     vector<vector<int> > generate(int numRows) {
         if (numRows == 0) {
@@ -33,11 +33,11 @@ public:
     
 };
 
-int main002(int argc, char* argv[]) {
-    Solution002 solution;
-    vector<vector<int>> result = solution.generate(5);
+int main(int argc, char* argv[]) {
+    Solution solution;
+    vector<vector<int> > result = solution.generate(5);
     
-    for (vector<vector<int>>::iterator it1 = result.begin(); it1 != result.end(); it1++) {
+    for (vector<vector<int> >::iterator it1 = result.begin(); it1 != result.end(); it1++) {
         for (vector<int>::iterator it2 = it1->begin(); it2 != it1->end(); it2++) {
             cout << *it2 << " ";
         }

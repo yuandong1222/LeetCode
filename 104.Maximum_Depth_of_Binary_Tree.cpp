@@ -11,7 +11,7 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
-class Solution005 {
+class Solution {
 public:
     int maxDepth(TreeNode* root) {
         //return _maxDepth_Recursion(root);
@@ -39,7 +39,7 @@ public:
         }
         
         int max_depth = 1;
-        queue<pair<TreeNode*, int>> queue;
+        queue<pair<TreeNode*, int> > queue;
         queue.push(pair<TreeNode*, int>(root, 1));
         
         while (!queue.empty()) {
@@ -63,10 +63,10 @@ public:
 };
 
 
-class Solution005_Test {
+class Solution_Test {
 public:
     void test_case_1() {
-        Solution005 solution;
+        Solution solution;
         
         TreeNode n1(1);
         
@@ -88,7 +88,7 @@ public:
         cout << solution.maxDepth(&n1) << endl;
     };
     void test_case_2() {
-        Solution005 solution;
+        Solution solution;
         
         TreeNode n1(1);
         
@@ -106,7 +106,7 @@ public:
         cout << solution.maxDepth(&n1) << endl;
     };
     void test_case_3() {
-        Solution005 solution;
+        Solution solution;
         
         TreeNode n1(1);
         TreeNode n2(-42);
@@ -126,7 +126,7 @@ public:
         cout << solution.maxDepth(&n1) << endl;
     };
     void test_case_4() {
-        Solution005 solution;
+        Solution solution;
         
         TreeNode n1(1);
         TreeNode n2(2);
@@ -136,8 +136,8 @@ public:
         cout << solution.maxDepth(&n1) << endl;
     };
 };
-int main005(int argc, char* argv[]) {
-    Solution005_Test solution_test;
+int main(int argc, char* argv[]) {
+    Solution_Test solution_test;
     solution_test.test_case_1();
     solution_test.test_case_2();
     solution_test.test_case_3();
